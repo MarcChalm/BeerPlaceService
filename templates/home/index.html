@@ -71,7 +71,7 @@
         <h2>New reviews!</h2>
         <ul>
             {% for e in events %}
-            <li> Name: {{ e.beerplace.name }}, place: {{ e.beerplace.city }}, description: {{ e.description }}</li>
+            <li> Name: {{ e.beerplace.name }}, place: {{ e.beerplace.location.city }}, description: {{ e.description }}</li>
             {% endfor %}
         </ul>
     </div>
